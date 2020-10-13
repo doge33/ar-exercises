@@ -6,3 +6,9 @@ puts "Exercise 3"
 puts "----------"
 
 # Your code goes here ...
+@store3 = Store.find_by(id:3)
+p @store3
+
+Store.destroy(3)
+
+puts "there are #{Store.count} records in the table 'stores'"
